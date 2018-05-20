@@ -2,7 +2,7 @@
 \special{papersize=210mm,297mm}
 
 % \usepackage[top=2in, bottom=2in, left=3cm,right=3cm]{geometry}
-\usepackage{Sweave}
+% \usepackage{Sweave}
 
 % \usepackage{hyperref}
 

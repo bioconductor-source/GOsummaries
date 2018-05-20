@@ -51,6 +51,19 @@
 #' @importFrom ggplot2 aes
 #' @importFrom ggplot2 position_identity
 #' @importFrom ggplot2 scale_fill_brewer
+#' @importFrom grDevices bmp
+#' @importFrom grDevices boxplot.stats
+#' @importFrom grDevices colorRampPalette
+#' @importFrom grDevices dev.off
+#' @importFrom grDevices jpeg
+#' @importFrom grDevices pdf
+#' @importFrom grDevices png
+#' @importFrom grDevices tiff
+#' @importFrom stats cor
+#' @importFrom stats pt
+#' @importFrom stats runif
+#' @importFrom utils head
+#' @importFrom utils packageVersion
 #' 
 #' @useDynLib GOsummaries, .registration = TRUE
 #' 

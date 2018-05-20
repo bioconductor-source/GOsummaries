@@ -475,7 +475,7 @@ annotate.gosummaries = function(gosummaries, organism, components = 1:length(gos
                             packageVersion("gProfileR"), 
                             packageVersion("GOsummaries"))
     gProfileR::set_user_agent(ua = user_agent, append = FALSE)
-    gProfileR::set_base_url("http://biit.cs.ut.ee/gprofiler")
+    # gProfileR::set_base_url("http://biit.cs.ut.ee/gprofiler")
 
     # gProfileR::set_base_url(url = "http://biit.cs.ut.ee/gprofiler_archive/r1227_e72_eg19/web/")
     
@@ -1610,6 +1610,7 @@ plot.gosummaries = function(x, components = 1:min(10, length(x)), classes = NA, 
 convert_gene_ids = function(unique_ids, gconvert_target, organism){
     if(!is.null(gconvert_target)){
         cat(sprintf("%s\n", "Convert IDs"))
+        gProfileR::set_base_url("http://biit.cs.ut.ee/gprofiler")
         gcr = gProfileR::gconvert(unique_ids, target = gconvert_target, 
                                   organism = organism)
         gcr = ddply(gcr, "alias", function(x){

@@ -1,6 +1,6 @@
 Package: GOsummaries
-Version: 2.17.0
-Date: 2018-04-28
+Version: 2.17.1
+Date: 2018-05-19
 License: GPL (>= 2)
 Description: A package to visualise Gene Ontology (GO) enrichment analysis
     results on gene lists arising from different analyses such clustering or
