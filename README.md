@@ -10,8 +10,9 @@ Raivo Kolde, Jaak Vilo. 2015. “GOsummaries: an R Package for Visual Functional
 ## Installation
 The package is available ar Bioconductor, so the installation can be done as usual. 
 ```s
-source("https://bioconductor.org/biocLite.R")
-biocLite("GOsummaries")
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("GOsummaries")
 ```
 
 More comprehensive user guide can be found in the [vignette](https://www.bioconductor.org/packages/release/bioc/vignettes/GOsummaries/inst/doc/GOsummaries-basics.pdf).
